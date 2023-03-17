@@ -20,5 +20,6 @@ console.log(checkTypeNumber([]));
 console.log(
   checkTypeNumber()
 ); /* OUTPUT yg keluar => 'err: bro where is the parameter?' */
+/* karena fungsi checkTypeNumber() membutuhkan satu parameter yang harus diisi saat pemanggilannya. jika parameter tidak diisi pada pemanggilan, maka fungsi akan mengeluarkan pesan error yang tertera pada output di atas. */
 
 exports.checkTypeNumber = checkTypeNumber;
