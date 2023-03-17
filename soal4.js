@@ -9,14 +9,10 @@ function isValidPassword(email) {
 }
 
 console.log(isValidPassword("Meong2021"));
-/* output => 'true' */
 console.log(isValidPassword("meong2021"));
-/* output => 'false' karena ga mempunyai huruf besar*/
 console.log(isValidPassword("@eong"));
-/* output => 'false' karena ga mempunyai angka dan terdiri 5 huruf*/
 console.log(isValidPassword("Meong2"));
-/* output => 'false' karena hanya 6 huruf*/
+
 console.log(isValidPassword(0));
-/* output => 'err' why err? */
 console.log(isValidPassword());
-/* output => 'err' why err? */
+/* Karena kedua pemanggilan fungsi isValidPassword tidak memberikan argumen apapun atau argumen yang diberikan tidak sesuai dengan yang diharapkan oleh fungsi. Perlu diingat bahwa fungsi isValidPassword memerlukan dua buah argumen, yaitu password dan username. Jika kedua argumen tersebut tidak diberikan atau tidak valid, maka fungsi isValidPassword akan menghasilkan nilai err. */

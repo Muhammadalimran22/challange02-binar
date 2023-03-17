@@ -8,17 +8,15 @@ function checkEmail(email) {
   }
 }
 
-/* EXPECTED RESULT */
-/* Ketika fuction tersebut dipanggil */
-console.log(
-  checkEmail("apranata@binar.co.id")
-); /* output yg keluar =>'VALID' */
-console.log(checkEmail("apranata@binar.com")); /* output yg keluar =>'VALID' */
-console.log(checkEmail("apranata@binar")); /* output yg keluar =>'INVALID' */
+console.log(checkEmail("apranata@binar.co.id"));
+console.log(checkEmail("apranata@binar.com"));
+console.log(checkEmail("apranata@binar"));
 console.log(
   checkEmail("apranata")
-); /* err: menjelaskan penyebab err nya kenapa */
-/* console.log(
+); /* Karena dalam kode yang diberikan, terdapat pemanggilan fungsi "checkEmail" dengan parameter "apranata". Namun, tidak ada implementasi untuk fungsi "checkEmail" itu sendiri dalam kode yang diberikan. */
+console.log(
   checkEmail(checkTypeNumber(3322))
-); */ /* err: menjelaskan penyabab err nya kenapa */
-console.log(checkEmail()); /* err: menjelaskan penyebab err nya kenapa */
+); /* Karena pemanggilan fungsi `checkTypeNumber(3322)` yang berisi bilangan bulat sebagai argumen pada fungsi `checkEmail` juga menimbulkan error karena tidak sesuai dengan parameter yang diharapkan, yang seharusnya adalah string yang berisi Email. */
+console.log(
+  checkEmail()
+); /* Karena fungsi checkEmail() membutuhkan input atau parameter yang harus diberikan ketika fungsi dipanggil, namun tidak ada input atau parameter yang diberikan sehingga terjadi error.*/

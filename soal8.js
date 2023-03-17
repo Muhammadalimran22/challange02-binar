@@ -91,3 +91,6 @@ function getInfoPenjualan(dataPenjualan) {
 
 console.log(getInfoPenjualan(dataPenjualanNovel));
 /* EXPECTED OUTPUT ==> OBJECT dengan format seperti yang disebutkan diatas */
+
+/* penjelasan */
+/* pada program di atas, terdapat sebuah array of object bernama dataPenjualanNovel yang berisi beberapa data mengenai produk-produk yang terjual. Terdapat pula sebuah fungsi bernama getInfoPenjualan yang menerima satu parameter yaitu sebuah array of object produk, dan fungsi ini mengembalikan sebuah object dengan beberapa informasi mengenai penjualan produk tersebut. */

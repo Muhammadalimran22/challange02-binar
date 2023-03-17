@@ -1,6 +1,6 @@
 function getAngkaTerbesarKedua(personName) {
   if (!Array.isArray(personName) || personName.length < 2) {
-    return "Error";
+    return "err";
   }
 
   let angkaTerbesar = personName[0];
@@ -21,13 +21,9 @@ function getAngkaTerbesarKedua(personName) {
   return angkaKeduaTerbesar;
 }
 
-/* EXPECTED RESULT
-  Ketika Fuction tersebut dipanggil
-*/
 const dataAngka = [9, 4, 7, 7, 4, 3, 2, 2, 8];
 console.log(getAngkaTerbesarKedua(dataAngka));
-/* EXPECTED RESULT
-  8
-*/
-console.log(getAngkaTerbesarKedua(0)); //Error
-console.log(getAngkaTerbesarKedua()); //Error
+
+console.log(getAngkaTerbesarKedua(0));
+console.log(getAngkaTerbesarKedua());
+/* karena kedua baris kode tersebut akan mengalami error karena tidak ada parameter yang diisi pada fungsi getAngkaTerbesarKedua(). fungsi tersebut membutuhkan minimal dua parameter berupa angka yang akan dibandingkan. tanpa parameter, tidak akan ada nilai yang bisa dibandingkan, sehingga akan terjadi error. */

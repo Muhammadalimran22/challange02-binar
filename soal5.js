@@ -25,12 +25,9 @@ function getSplitName(personName) {
 }
 
 console.log(getSplitName("Aldi Daniela Pranata"));
-/* output => {firstname 'aldi', middlename 'daniela', lastname 'pranata'}*/
 console.log(getSplitName("Dwi Kuncoro"));
-/* ooutput => {firstname 'dwi', middlename 'null', lastname 'kuncoro'} */
 console.log(getSplitName("Aurora"));
-/* output => {firstname 'aurora', middlename 'null', 'null'} */
+
 console.log(getSplitName("Aurora Aureliya Sukma Darma"));
-/* err this is only 3 characters name */
 console.log(getSplitName(0));
-/* 'err' why err? */
+/* Karena pada pemanggilan fungsi getSplitName("Aurora Aureliya Sukma Darma"), tidak terdapat deklarasi fungsi getSplitName sebelumnya Dan pada pemanggilan fungsi getSplitName(0), parameter yang dimasukkan bukan berupa string, melainkan angka 0. */
