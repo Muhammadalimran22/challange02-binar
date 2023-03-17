@@ -20,3 +20,5 @@ console.log(checkTypeNumber([]));
 console.log(
   checkTypeNumber()
 ); /* OUTPUT yg keluar => 'err: bro where is the parameter?' */
+
+exports.checkTypeNumber = checkTypeNumber;

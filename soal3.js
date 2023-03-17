@@ -1,3 +1,4 @@
+const { checkTypeNumber } = require("./soal2");
 function checkEmail(email) {
   const regex =
     /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9]{0,61}[a-zA-Z0-9])?)*$/;
@@ -15,7 +16,7 @@ console.log(
   checkEmail("apranata")
 ); /* Karena dalam kode yang diberikan, terdapat pemanggilan fungsi "checkEmail" dengan parameter "apranata". Namun, tidak ada implementasi untuk fungsi "checkEmail" itu sendiri dalam kode yang diberikan. */
 console.log(
-  checkEmail(checkTypeNumber(3322))
+  checkTypeNumber(checkEmail(3322))
 ); /* Karena pemanggilan fungsi `checkTypeNumber(3322)` yang berisi bilangan bulat sebagai argumen pada fungsi `checkEmail` juga menimbulkan error karena tidak sesuai dengan parameter yang diharapkan, yang seharusnya adalah string yang berisi Email. */
 console.log(
   checkEmail()
