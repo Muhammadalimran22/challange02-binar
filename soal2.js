@@ -1,6 +1,6 @@
 function checkTypeNumber(givenNumber) {
   if (typeof givenNumber === "undefined") {
-    return "err: bro where is the parameter?";
+    return "ERROR: Bro Where Is Paramater?";
   } else if (typeof givenNumber === "number") {
     if (givenNumber % 2 === 0) {
       return "GENAP";
@@ -8,7 +8,7 @@ function checkTypeNumber(givenNumber) {
       return "GANJIL";
     }
   } else {
-    return "err: invalid data type";
+    return "ERROR: Invalid Data Type";
   }
 }
 
